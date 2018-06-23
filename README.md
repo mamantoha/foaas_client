@@ -40,7 +40,7 @@ client.dosomething("Do", "work", "Ruby", accept_type: :text)
 # => Do the fucking work! - Ruby
 ```
 
-Will respond to the following `accept_tyle` values:
+Will respond to the following `accept_type` values:
 
 * `:text` - Content will be returned as a plain string.
 * `:json` - Content will be returned as a JSON object.
