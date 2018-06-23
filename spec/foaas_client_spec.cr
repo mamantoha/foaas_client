@@ -1,9 +1,8 @@
 require "./spec_helper"
 
-describe FoaasClient do
-  # TODO: Write tests
-
+describe Foaas::Client do
   it "works" do
-    false.should eq(true)
+    client = Foaas::Client.new
+    client.rtfm("Me").should eq("Read the fucking manual! - Me")
   end
 end
