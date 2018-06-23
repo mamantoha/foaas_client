@@ -25,6 +25,8 @@ Version `1.1.1` of the FOAAS API is supported.
 ```crystal
 require "foaas_client"
 
+client = Foaas::Client.new
+
 client.rtfm("Me")
 # => Read the fucking manual! - Me
 
@@ -55,4 +57,4 @@ Will respond to the following `accept_tyle` values:
 
 ## Contributors
 
-- [mamantoha](https://github.com/mamantoha) Anton Maminov - creator, maintainer
+* [mamantoha](https://github.com/mamantoha) Anton Maminov - creator, maintainer
