@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.30.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/mamantoha/foaas_client">
+  <title>Foaas::Client - github.com/mamantoha/foaas_client</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/mamantoha/foaas_client/Foaas" data-name="foaas">
+      <a href="../Foaas.html">Foaas</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/mamantoha/foaas_client/Foaas/Client" data-name="foaas::client">
+      <a href="../Foaas/Client.html">Client</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Foaas::Client
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Foaas/Client.html">Foaas::Client</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A Crystal client for FOAAS (Fuck Off As A Service) - a modern, RESTful, scalable solution
+to the common problem of telling people to fuck off.</p>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;foaas_client&quot;</span>
+
+client.rtfm(<span class="s">&quot;Me&quot;</span>)</code></pre>
+
+<p>List of <a href="https://foaas.com/operations" target="_blank">operations</a> with names and fields.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/operations.cr#L2" target="_blank">
+        foaas_client/operations.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L14" target="_blank">
+        foaas_client/client.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/version.cr#L2" target="_blank">
+        foaas_client/version.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>Constant Summary</h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="URL">
+        <strong>URL</strong> = <code><span class="s">&quot;https://foaas.com&quot;</span></code>
+      </dt>
+      
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.3.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+          <div class="summary"><p>You don't give a fuck about this method!</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#anyway(company:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#anyway</strong>(company : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Who the fuck are you anyway</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#asshole(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#asshole</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Asshole</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#awesome(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#awesome</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Awesome</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#back(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#back</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Back the fuck off</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bag(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bag</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bag</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ballmer(name:String,company:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#ballmer</strong>(name : String, company : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Ballmer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bday(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bday</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bday</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#because(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#because</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Because</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#blackadder(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#blackadder</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Blackadder</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bm(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bm</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bravo Mike</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bucket(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bucket</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bucket</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bus(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bus</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bus</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bye(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#bye</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Bye</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#caniuse(tool:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#caniuse</strong>(tool : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Can I Use</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chainsaw(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#chainsaw</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Chainsaw</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cocksplat(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#cocksplat</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Cocksplat</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cool(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#cool</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Cool Story</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cup(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#cup</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Cup</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dalton(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#dalton</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Dalton</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#deraadt(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#deraadt</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>{name} you are being the usual slimy hypocritical asshole...</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#diabetes(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#diabetes</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Diabetes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#donut(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#donut</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Donut</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dosomething(do:String,something:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#dosomething</strong>(do : String, something : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Do Something</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#everyone(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#everyone</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Everyone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#everything(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#everything</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Everything</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#family(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#family</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Family</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fascinating(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#fascinating</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fascinating</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#field(name:String,from:String,reference:String,*,accept_type=:text)-instance-method" class="signature"><strong>#field</strong>(name : String, from : String, reference : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Field of Fucks</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#flying(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#flying</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Flying</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fyyff(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#fyyff</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>FYYFF</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gfy(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#gfy</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Golf Foxtrot Yankee</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#give(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#give</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Give</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#greed(noun:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#greed</strong>(noun : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Greed</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#horse(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#horse</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck you and the horse you rode in on</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#immensity(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#immensity</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Immensity</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ing(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#ing</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fucking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#keep(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#keep</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Keep</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#keepcalm(reaction:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#keepcalm</strong>(reaction : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Keep Calm</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#king(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#king</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>King</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#life(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#life</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Life</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#linus(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#linus</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Linus</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#look(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#look</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Look</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#looking(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#looking</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Looking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#madison(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#madison</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Madison</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#maybe(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#maybe</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Maybe</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#me(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#me</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck Me</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mornin(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#mornin</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>mornin</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#no(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#no</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>No</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nugget(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#nugget</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Nugget</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#off(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#off</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck Off</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#off_with(behavior:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#off_with</strong>(behavior : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck Off With</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#outside(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#outside</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Outside</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#particular(thing:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#particular</strong>(thing : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>This Thing In Particular</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pink(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#pink</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Pink</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#problem(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#problem</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Problem</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#programmer(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#programmer</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Programmer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pulp(language:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#pulp</strong>(language : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Pulp</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#question(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#question</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Question</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#retard(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#retard</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Retard</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ridiculous(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#ridiculous</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>That's fucking ridiculous</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rtfm(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#rtfm</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>RTFM</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sake(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#sake</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>sake</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shakespeare(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#shakespeare</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Shakespeare</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shit(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#shit</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck This Shit</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shutup(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#shutup</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Shut Up</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#single(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#single</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Single</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thanks(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#thanks</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Thanks</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#that(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#that</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck That</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#think(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#think</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>You Think</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thinking(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#thinking</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Thinking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#this(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#this</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck This</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thumbs(from:String,name:String,*,accept_type=:text)-instance-method" class="signature"><strong>#thumbs</strong>(from : String, name : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>This Guy</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#too(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#too</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Too</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tucker(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#tucker</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Tucker</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#what</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>What</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xmas(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#xmas</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Xmas</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yoda(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#yoda</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Yoda</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#you(name:String,from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#you</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Fuck You</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zayn(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#zayn</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Zayn</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zero(from:String,*,accept_type=:text)-instance-method" class="signature"><strong>#zero</strong>(from : String, *, accept_type = <span class="n">:text</span>)</a>
+        
+          <div class="summary"><p>Zero</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>You don't give a fuck about this method!</p>
+
+<p>Just call</p>
+
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Foaas</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span></code></pre>
+
+<p>to say</p>
+
+<pre><code class="language-crystal">client.thanks(from: <span class="s">&quot;%username%&quot;</span>)</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="anyway(company:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>anyway</strong>(company : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#anyway(company:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Who the fuck are you anyway</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>company</code> Company</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="asshole(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>asshole</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#asshole(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Asshole</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="awesome(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>awesome</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#awesome(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Awesome</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="back(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>back</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#back(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Back the fuck off</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bag(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bag</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bag(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bag</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ballmer(name:String,company:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>ballmer</strong>(name : String, company : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#ballmer(name:String,company:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Ballmer</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>company</code> Company</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bday(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bday</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bday(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bday</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="because(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>because</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#because(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Because</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="blackadder(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>blackadder</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#blackadder(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Blackadder</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bm(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bm</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bm(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bravo Mike</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bucket(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bucket</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bucket(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bucket</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bus(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bus</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bus(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bus</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bye(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>bye</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#bye(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Bye</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="caniuse(tool:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>caniuse</strong>(tool : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#caniuse(tool:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Can I Use</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>tool</code> Tool</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chainsaw(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>chainsaw</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#chainsaw(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Chainsaw</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cocksplat(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>cocksplat</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#cocksplat(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cocksplat</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cool(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>cool</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#cool(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cool Story</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cup(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>cup</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#cup(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cup</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dalton(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>dalton</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#dalton(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Dalton</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="deraadt(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>deraadt</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#deraadt(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>{name} you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore.</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="diabetes(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>diabetes</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#diabetes(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Diabetes</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="donut(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>donut</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#donut(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Donut</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dosomething(do:String,something:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>dosomething</strong>(do : String, something : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#dosomething(do:String,something:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Do Something</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>do</code> Do</li><li><code>something</code> Something</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="everyone(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>everyone</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#everyone(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Everyone</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="everything(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>everything</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#everything(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Everything</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="family(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>family</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#family(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Family</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fascinating(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>fascinating</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#fascinating(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fascinating</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="field(name:String,from:String,reference:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>field</strong>(name : String, from : String, reference : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#field(name:String,from:String,reference:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Field of Fucks</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li><li><code>reference</code> Reference</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="flying(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>flying</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#flying(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Flying</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fyyff(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>fyyff</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#fyyff(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>FYYFF</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gfy(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>gfy</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#gfy(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Golf Foxtrot Yankee</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="give(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>give</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#give(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Give</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="greed(noun:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>greed</strong>(noun : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#greed(noun:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Greed</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>noun</code> Noun</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="horse(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>horse</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#horse(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck you and the horse you rode in on</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="immensity(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>immensity</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#immensity(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Immensity</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ing(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>ing</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#ing(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fucking</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="keep(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>keep</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#keep(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Keep</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="keepcalm(reaction:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>keepcalm</strong>(reaction : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#keepcalm(reaction:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Keep Calm</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>reaction</code> Reaction</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="king(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>king</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#king(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>King</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="life(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>life</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#life(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Life</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="linus(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>linus</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#linus(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Linus</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="look(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>look</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#look(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Look</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="looking(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>looking</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#looking(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Looking</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="madison(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>madison</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#madison(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Madison</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="maybe(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>maybe</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#maybe(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Maybe</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="me(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>me</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#me(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck Me</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mornin(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>mornin</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#mornin(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>mornin</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="no(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>no</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#no(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>No</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nugget(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>nugget</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#nugget(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Nugget</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="off(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>off</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#off(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck Off</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="off_with(behavior:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>off_with</strong>(behavior : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#off_with(behavior:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck Off With</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>behavior</code> Behavior</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="outside(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>outside</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#outside(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Outside</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="particular(thing:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>particular</strong>(thing : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#particular(thing:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This Thing In Particular</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>thing</code> Thing</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pink(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>pink</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#pink(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Pink</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="problem(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>problem</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#problem(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Problem</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="programmer(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>programmer</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#programmer(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Programmer</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pulp(language:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>pulp</strong>(language : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#pulp(language:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Pulp</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>language</code> Language</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="question(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>question</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#question(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Question</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="retard(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>retard</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#retard(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Retard</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ridiculous(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>ridiculous</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#ridiculous(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>That's fucking ridiculous</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rtfm(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>rtfm</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#rtfm(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>RTFM</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sake(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>sake</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#sake(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>sake</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shakespeare(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>shakespeare</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#shakespeare(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Shakespeare</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shit(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>shit</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#shit(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck This Shit</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shutup(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>shutup</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#shutup(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Shut Up</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="single(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>single</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#single(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Single</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thanks(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>thanks</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#thanks(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Thanks</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="that(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>that</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#that(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck That</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="think(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>think</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#think(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>You Think</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thinking(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>thinking</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#thinking(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Thinking</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="this(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>this</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#this(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck This</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thumbs(from:String,name:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>thumbs</strong>(from : String, name : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#thumbs(from:String,name:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>This Guy</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li><li><code>name</code> Name</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="too(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>too</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#too(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Too</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tucker(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>tucker</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#tucker(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Tucker</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>what</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#what(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>What</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xmas(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>xmas</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#xmas(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Xmas</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yoda(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>yoda</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#yoda(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Yoda</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="you(name:String,from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>you</strong>(name : String, from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#you(name:String,from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Fuck You</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>name</code> Name</li><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zayn(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>zayn</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#zayn(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Zayn</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zero(from:String,*,accept_type=:text)-instance-method">
+      <div class="signature">
+        
+        def <strong>zero</strong>(from : String, *, accept_type = <span class="n">:text</span>)
+
+        <a class="method-permalink" href="#zero(from:String,*,accept_type=:text)-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Zero</p>
+
+<p>Parameters:</p>
+
+<ul><li><code>from</code> From</li></ul></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/1535d463da193228506f58be81725949e3d3b2cf/src/foaas_client/client.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
