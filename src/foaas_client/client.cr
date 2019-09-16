@@ -10,9 +10,9 @@ module Foaas
   # client.rtfm("Me")
   # ```
   #
-  # List of [operations](http://foaas.com/operations) with names and fields.
+  # List of [operations](https://foaas.com/operations) with names and fields.
   class Client
-    URL = "http://foaas.com"
+    URL = "https://foaas.com"
 
     # You don't give a fuck about this method!
     #
@@ -59,7 +59,7 @@ module Foaas
         template = {{operation["url"].gsub(/:(\w+)/, "%{\\1}")}}
 
         hash = {{operation["fields"].map { |f| {f["field"] => f["field"].id} }}}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
-        hash.each { |k, v| hash[k] = URI.escape(v) }
+        hash.each { |k, v| hash[k] = URI.encode(v) }
 
         url = URL + template % hash
         headers = headers(accept_type)
