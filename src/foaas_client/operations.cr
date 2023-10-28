@@ -3,1194 +3,1194 @@ module Foaas
     # :nodoc:
     OPERATIONS = [
       {
-        "name" => "Absolutely fucking not",
-        "url" => "/absolutely/:company/:from",
+        "name"   => "Absolutely fucking not",
+        "url"    => "/absolutely/:company/:from",
         "fields" => [
           {
-            "name" => "Company",
-            "field" => "company"
+            "name"  => "Company",
+            "field" => "company",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Who the fuck are you anyway",
-        "url" => "/anyway/:company/:from",
+        "name"   => "Who the fuck are you anyway",
+        "url"    => "/anyway/:company/:from",
         "fields" => [
           {
-            "name" => "Company",
-            "field" => "company"
+            "name"  => "Company",
+            "field" => "company",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Asshole",
-        "url" => "/asshole/:from",
+        "name"   => "Asshole",
+        "url"    => "/asshole/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Awesome",
-        "url" => "/awesome/:from",
+        "name"   => "Awesome",
+        "url"    => "/awesome/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Back the fuck off",
-        "url" => "/back/:name/:from",
+        "name"   => "Back the fuck off",
+        "url"    => "/back/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bag",
-        "url" => "/bag/:from",
+        "name"   => "Bag",
+        "url"    => "/bag/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Ballmer",
-        "url" => "/ballmer/:name/:company/:from",
+        "name"   => "Ballmer",
+        "url"    => "/ballmer/:name/:company/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "Company",
-            "field" => "company"
+            "name"  => "Company",
+            "field" => "company",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bday",
-        "url" => "/bday/:name/:from",
+        "name"   => "Bday",
+        "url"    => "/bday/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Because",
-        "url" => "/because/:from",
+        "name"   => "Because",
+        "url"    => "/because/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Blackadder",
-        "url" => "/blackadder/:name/:from",
+        "name"   => "Blackadder",
+        "url"    => "/blackadder/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bravo Mike",
-        "url" => "/bm/:name/:from",
+        "name"   => "Bravo Mike",
+        "url"    => "/bm/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bucket",
-        "url" => "/bucket/:from",
+        "name"   => "Bucket",
+        "url"    => "/bucket/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bus",
-        "url" => "/bus/:name/:from",
+        "name"   => "Bus",
+        "url"    => "/bus/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Bye",
-        "url" => "/bye/:from",
+        "name"   => "Bye",
+        "url"    => "/bye/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Can I Use",
-        "url" => "/caniuse/:tool/:from",
+        "name"   => "Can I Use",
+        "url"    => "/caniuse/:tool/:from",
         "fields" => [
           {
-            "name" => "Tool",
-            "field" => "tool"
+            "name"  => "Tool",
+            "field" => "tool",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Chainsaw",
-        "url" => "/chainsaw/:name/:from",
+        "name"   => "Chainsaw",
+        "url"    => "/chainsaw/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Cocksplat",
-        "url" => "/cocksplat/:name/:from",
+        "name"   => "Cocksplat",
+        "url"    => "/cocksplat/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Cool Story",
-        "url" => "/cool/:from",
+        "name"   => "Cool Story",
+        "url"    => "/cool/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Cup",
-        "url" => "/cup/:from",
+        "name"   => "Cup",
+        "url"    => "/cup/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Dalton",
-        "url" => "/dalton/:name/:from",
+        "name"   => "Dalton",
+        "url"    => "/dalton/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Dense",
-        "url" => "/dense/:from",
+        "name"   => "Dense",
+        "url"    => "/dense/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "{name} you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore.",
-        "url" => "/deraadt/:name/:from",
+        "name"   => "{name} you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore.",
+        "url"    => "/deraadt/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Diabetes",
-        "url" => "/diabetes/:from",
+        "name"   => "Diabetes",
+        "url"    => "/diabetes/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Donut",
-        "url" => "/donut/:name/:from",
+        "name"   => "Donut",
+        "url"    => "/donut/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Do Something",
-        "url" => "/dosomething/:do/:something/:from",
+        "name"   => "Do Something",
+        "url"    => "/dosomething/:do/:something/:from",
         "fields" => [
           {
-            "name" => "Do",
-            "field" => "do"
+            "name"  => "Do",
+            "field" => "do",
           },
           {
-            "name" => "Something",
-            "field" => "something"
+            "name"  => "Something",
+            "field" => "something",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Dumbledore",
-        "url" => "/dumbledore/:from",
+        "name"   => "Dumbledore",
+        "url"    => "/dumbledore/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Equity",
-        "url" => "/equity/:name/:from",
+        "name"   => "Equity",
+        "url"    => "/equity/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Even",
-        "url" => "/even/:from",
+        "name"   => "Even",
+        "url"    => "/even/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Everyone",
-        "url" => "/everyone/:from",
+        "name"   => "Everyone",
+        "url"    => "/everyone/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Everything",
-        "url" => "/everything/:from",
+        "name"   => "Everything",
+        "url"    => "/everything/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Family",
-        "url" => "/family/:from",
+        "name"   => "Family",
+        "url"    => "/family/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fascinating",
-        "url" => "/fascinating/:from",
+        "name"   => "Fascinating",
+        "url"    => "/fascinating/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Disappoint Fewer People",
-        "url" => "/fewer/:name/:from",
+        "name"   => "Disappoint Fewer People",
+        "url"    => "/fewer/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Field of Fucks",
-        "url" => "/field/:name/:from/:reference",
+        "name"   => "Field of Fucks",
+        "url"    => "/field/:name/:from/:reference",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
           {
-            "name" => "Reference",
-            "field" => "reference"
+            "name"  => "Reference",
+            "field" => "reference",
           },
-        ]
+        ],
       },
       {
-        "name" => "Flying",
-        "url" => "/flying/:from",
+        "name"   => "Flying",
+        "url"    => "/flying/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck That, Fuck You",
-        "url" => "/ftfy/:from",
+        "name"   => "Fuck That, Fuck You",
+        "url"    => "/ftfy/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck That Shit",
-        "url" => "/fts/:name/:from",
+        "name"   => "Fuck That Shit",
+        "url"    => "/fts/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "FYYFF",
-        "url" => "/fyyff/:from",
+        "name"   => "FYYFF",
+        "url"    => "/fyyff/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Golf Foxtrot Yankee",
-        "url" => "/gfy/:name/:from",
+        "name"   => "Golf Foxtrot Yankee",
+        "url"    => "/gfy/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Give",
-        "url" => "/give/:from",
+        "name"   => "Give",
+        "url"    => "/give/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Greed",
-        "url" => "/greed/:noun/:from",
+        "name"   => "Greed",
+        "url"    => "/greed/:noun/:from",
         "fields" => [
           {
-            "name" => "Noun",
-            "field" => "noun"
+            "name"  => "Noun",
+            "field" => "noun",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Holygrail",
-        "url" => "/holygrail/:from",
+        "name"   => "Holygrail",
+        "url"    => "/holygrail/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck you and the horse you rode in on",
-        "url" => "/horse/:from",
+        "name"   => "Fuck you and the horse you rode in on",
+        "url"    => "/horse/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Idea",
-        "url" => "/idea/:from",
+        "name"   => "Idea",
+        "url"    => "/idea/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Immensity",
-        "url" => "/immensity/:from",
+        "name"   => "Immensity",
+        "url"    => "/immensity/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fucking",
-        "url" => "/ing/:name/:from",
+        "name"   => "Fucking",
+        "url"    => "/ing/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Jingle Bells",
-        "url" => "/jinglebells/:from",
+        "name"   => "Jingle Bells",
+        "url"    => "/jinglebells/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Keep",
-        "url" => "/keep/:name/:from",
+        "name"   => "Keep",
+        "url"    => "/keep/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Keep Calm",
-        "url" => "/keepcalm/:reaction/:from",
+        "name"   => "Keep Calm",
+        "url"    => "/keepcalm/:reaction/:from",
         "fields" => [
           {
-            "name" => "Reaction",
-            "field" => "reaction"
+            "name"  => "Reaction",
+            "field" => "reaction",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "King",
-        "url" => "/king/:name/:from",
+        "name"   => "King",
+        "url"    => "/king/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Legend",
-        "url" => "/legend/:name/:from",
+        "name"   => "Legend",
+        "url"    => "/legend/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Life",
-        "url" => "/life/:from",
+        "name"   => "Life",
+        "url"    => "/life/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Linus",
-        "url" => "/linus/:name/:from",
+        "name"   => "Linus",
+        "url"    => "/linus/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Check your fucking logs!",
-        "url" => "/logs/:from",
+        "name"   => "Check your fucking logs!",
+        "url"    => "/logs/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Look",
-        "url" => "/look/:name/:from",
+        "name"   => "Look",
+        "url"    => "/look/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Looking",
-        "url" => "/looking/:from",
+        "name"   => "Looking",
+        "url"    => "/looking/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "LowPoly",
-        "url" => "/lowpoly/:from",
+        "name"   => "LowPoly",
+        "url"    => "/lowpoly/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Madison",
-        "url" => "/madison/:name/:from",
+        "name"   => "Madison",
+        "url"    => "/madison/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Maybe",
-        "url" => "/maybe/:from",
+        "name"   => "Maybe",
+        "url"    => "/maybe/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck Me",
-        "url" => "/me/:from",
+        "name"   => "Fuck Me",
+        "url"    => "/me/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "mornin",
-        "url" => "/mornin/:from",
+        "name"   => "mornin",
+        "url"    => "/mornin/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "No",
-        "url" => "/no/:from",
+        "name"   => "No",
+        "url"    => "/no/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Nugget",
-        "url" => "/nugget/:name/:from",
+        "name"   => "Nugget",
+        "url"    => "/nugget/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck Off",
-        "url" => "/off/:name/:from",
+        "name"   => "Fuck Off",
+        "url"    => "/off/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck Off With",
-        "url" => "/off-with/:behavior/:from",
+        "name"   => "Fuck Off With",
+        "url"    => "/off-with/:behavior/:from",
         "fields" => [
           {
-            "name" => "Behavior",
-            "field" => "behavior"
+            "name"  => "Behavior",
+            "field" => "behavior",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Outside",
-        "url" => "/outside/:name/:from",
+        "name"   => "Outside",
+        "url"    => "/outside/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "This Thing In Particular",
-        "url" => "/particular/:thing/:from",
+        "name"   => "This Thing In Particular",
+        "url"    => "/particular/:thing/:from",
         "fields" => [
           {
-            "name" => "Thing",
-            "field" => "thing"
+            "name"  => "Thing",
+            "field" => "thing",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Pink",
-        "url" => "/pink/:from",
+        "name"   => "Pink",
+        "url"    => "/pink/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Problem",
-        "url" => "/problem/:name/:from",
+        "name"   => "Problem",
+        "url"    => "/problem/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Programmer",
-        "url" => "/programmer/:from",
+        "name"   => "Programmer",
+        "url"    => "/programmer/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Pulp",
-        "url" => "/pulp/:language/:from",
+        "name"   => "Pulp",
+        "url"    => "/pulp/:language/:from",
         "fields" => [
           {
-            "name" => "Language",
-            "field" => "language"
+            "name"  => "Language",
+            "field" => "language",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Question",
-        "url" => "/question/:from",
+        "name"   => "Question",
+        "url"    => "/question/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Rat's Arse",
-        "url" => "/ratsarse/:from",
+        "name"   => "Rat's Arse",
+        "url"    => "/ratsarse/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Retard",
-        "url" => "/retard/:from",
+        "name"   => "Retard",
+        "url"    => "/retard/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "That's fucking ridiculous",
-        "url" => "/ridiculous/:from",
+        "name"   => "That's fucking ridiculous",
+        "url"    => "/ridiculous/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Rockstar",
-        "url" => "/rockstar/:name/:from",
+        "name"   => "Rockstar",
+        "url"    => "/rockstar/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "RTFM",
-        "url" => "/rtfm/:from",
+        "name"   => "RTFM",
+        "url"    => "/rtfm/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "sake",
-        "url" => "/sake/:from",
+        "name"   => "sake",
+        "url"    => "/sake/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Shakespeare",
-        "url" => "/shakespeare/:name/:from",
+        "name"   => "Shakespeare",
+        "url"    => "/shakespeare/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck This Shit",
-        "url" => "/shit/:from",
+        "name"   => "Fuck This Shit",
+        "url"    => "/shit/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Shut Up",
-        "url" => "/shutup/:name/:from",
+        "name"   => "Shut Up",
+        "url"    => "/shutup/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Single",
-        "url" => "/single/:from",
+        "name"   => "Single",
+        "url"    => "/single/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Thanks",
-        "url" => "/thanks/:from",
+        "name"   => "Thanks",
+        "url"    => "/thanks/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck That",
-        "url" => "/that/:from",
+        "name"   => "Fuck That",
+        "url"    => "/that/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "You Think",
-        "url" => "/think/:name/:from",
+        "name"   => "You Think",
+        "url"    => "/think/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Thinking",
-        "url" => "/thinking/:name/:from",
+        "name"   => "Thinking",
+        "url"    => "/thinking/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck This",
-        "url" => "/this/:from",
+        "name"   => "Fuck This",
+        "url"    => "/this/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "This Guy",
-        "url" => "/thumbs/:name/:from",
+        "name"   => "This Guy",
+        "url"    => "/thumbs/:name/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
-        ]
+        ],
       },
       {
-        "name" => "Too",
-        "url" => "/too/:from",
+        "name"   => "Too",
+        "url"    => "/too/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Tucker",
-        "url" => "/tucker/:from",
+        "name"   => "Tucker",
+        "url"    => "/tucker/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "understand",
-        "url" => "/understand/:name/:from",
+        "name"   => "understand",
+        "url"    => "/understand/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Waste",
-        "url" => "/waste/:name/:from",
+        "name"   => "Waste",
+        "url"    => "/waste/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "What",
-        "url" => "/what/:from",
+        "name"   => "What",
+        "url"    => "/what/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Xmas",
-        "url" => "/xmas/:name/:from",
+        "name"   => "Xmas",
+        "url"    => "/xmas/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Yeah",
-        "url" => "/yeah/:from",
+        "name"   => "Yeah",
+        "url"    => "/yeah/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Yoda",
-        "url" => "/yoda/:name/:from",
+        "name"   => "Yoda",
+        "url"    => "/yoda/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Fuck You",
-        "url" => "/you/:name/:from",
+        "name"   => "Fuck You",
+        "url"    => "/you/:name/:from",
         "fields" => [
           {
-            "name" => "Name",
-            "field" => "name"
+            "name"  => "Name",
+            "field" => "name",
           },
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Zayn",
-        "url" => "/zayn/:from",
+        "name"   => "Zayn",
+        "url"    => "/zayn/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
       {
-        "name" => "Zero",
-        "url" => "/zero/:from",
+        "name"   => "Zero",
+        "url"    => "/zero/:from",
         "fields" => [
           {
-            "name" => "From",
-            "field" => "from"
+            "name"  => "From",
+            "field" => "from",
           },
-        ]
+        ],
       },
     ]
   end
