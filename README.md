@@ -1,6 +1,5 @@
 # FOAAS Client
 
-[![Build Status](https://travis-ci.org/mamantoha/foaas_client.svg?branch=master)](https://travis-ci.org/mamantoha/foaas_client)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://mamantoha.github.io/foaas_client/)
 
 A Crystal client for [FOAAS](https://foaas.com)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
