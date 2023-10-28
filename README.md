@@ -50,7 +50,7 @@ Will respond to the following `accept_type` values:
 ## Development
 
 ```console
-crystal ./utils/generate_operations.cr > ./src/foaas_client/operations.cr
+crystal ./utils/generate_operations.cr
 ```
 
 ## Contributing

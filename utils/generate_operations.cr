@@ -33,4 +33,4 @@ class OperationsArray
   ECR.def_to_s "#{__DIR__}/operations.ecr"
 end
 
-print OperationsArray.new(operations).to_s
+File.write("#{__DIR__}/../src/foaas_client/operations.cr", OperationsArray.new(operations).to_s)
