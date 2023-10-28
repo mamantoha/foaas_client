@@ -47,6 +47,13 @@ Will respond to the following `accept_type` values:
 * `:html` - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
 * `:xml` - Content will be returned as a XML document.
 
+## Development
+
+```console
+crystal utils/generate_operations.cr
+crystal tool format
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/mamantoha/foaas_client/fork )
