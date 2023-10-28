@@ -2,7 +2,7 @@
 
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://mamantoha.github.io/foaas_client/)
 
-A Crystal client for [FOAAS](https://foaas.com)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
+A Crystal client for [FOAAS](https://github.com/tomdionysus/foaas)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
 > This library was writter to demonstrate a powerful macro system in [Crystal](https://crystal-lang.org/).
 
