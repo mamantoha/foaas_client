@@ -35,7 +35,7 @@ module Foaas
     # to simply show some code.
     #
     # Here is a macro which looping through the `Foaas::Client::OPERATIONS` hash
-    # to define 80 *beautiful* methods for each operation.
+    # to define 99 *beautiful* methods for each operation.
     #
     # By the way, macros are evaluated at compile-time, meaning that they have no performance penalty.
     #

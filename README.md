@@ -18,7 +18,7 @@ dependencies:
 
 ## API Version
 
-Version `1.1.1` of the FOAAS API is supported.
+Version `2.3.2` of the FOAAS API is supported.
 
 ## Usage
 

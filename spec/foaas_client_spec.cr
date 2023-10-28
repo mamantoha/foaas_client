@@ -8,6 +8,10 @@ describe Foaas::Client do
       .should eq("Read the fucking manual! - Me")
   end
 
+  it "operations" do
+    Foaas::Client::OPERATIONS.size.should eq(99)
+  end
+
   it "accept json" do
     client.rtfm("Me", accept_type: :json)
       .should eq("{\"message\":\"Read the fucking manual!\",\"subtitle\":\"- Me\"}")
