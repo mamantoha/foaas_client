@@ -31,4 +31,9 @@ describe Foaas::Client do
     client.rtfm("Me", accept_type: :text)
       .should eq("Read the fucking manual! - Me")
   end
+
+  it "i18n" do
+    client.awesome("Everyone", accept_type: :json, i18n: "uk")
+      .should eq("{\"message\":\"Це, чорт забирай, класно. Усі \",\"subtitle\":\" undefined\"}")
+  end
 end
