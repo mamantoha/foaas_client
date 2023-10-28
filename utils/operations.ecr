@@ -7,12 +7,12 @@ module Foaas
       <%- @operations.each do |operation| -%>
       <%- unless operation.fields.empty? -%>
       {
-        "name" => "<%= operation.name %>",
-        "url" => "<%= operation.url %>",
+        "name"   => "<%= operation.name %>",
+        "url"    => "<%= operation.url %>",
         "fields" => [
           <%- operation.fields.each do |field| -%>
           {
-            "name" => "<%= field.name %>",
+            "name"  => "<%= field.name %>",
             "field" => "<%= field.field %>",
           },
           <%- end -%>
