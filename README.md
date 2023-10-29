@@ -39,14 +39,17 @@ client.you("Nvidia", "Linus Torvalds", accept_type: :text)
 
 client.dosomething("Do", "work", "Ruby", accept_type: :text)
 # => Do the fucking work! - Ruby
+
+client.awesome("Everyone", accept_type: :json, i18n: "uk")
+# => "{\"message\":\"Це, чорт забирай, класно. Усі \",\"subtitle\":\" undefined\"}"
 ```
 
 Will respond to the following `accept_type` values:
 
-* `:text` - Content will be returned as a plain string.
-* `:json` - Content will be returned as a JSON object.
-* `:html` - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
-* `:xml` - Content will be returned as a XML document.
+- `:text` - Content will be returned as a plain string.
+- `:json` - Content will be returned as a JSON object.
+- `:html` - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
+- `:xml` - Content will be returned as a XML document.
 
 ## Development
 
@@ -64,4 +67,4 @@ crystal ./utils/generate_operations.cr
 
 ## Contributors
 
-* [mamantoha](https://github.com/mamantoha) Anton Maminov - creator, maintainer
+- [mamantoha](https://github.com/mamantoha) Anton Maminov - creator, maintainer
