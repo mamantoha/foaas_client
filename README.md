@@ -1,9 +1,8 @@
 # FOAAS Client
 
-[![Build Status](https://travis-ci.org/mamantoha/foaas_client.svg?branch=master)](https://travis-ci.org/mamantoha/foaas_client)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://mamantoha.github.io/foaas_client/)
 
-A Crystal client for [FOAAS](https://foaas.com)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
+A Crystal client for [FOAAS](https://github.com/tomdionysus/foaas)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
 > This library was writter to demonstrate a powerful macro system in [Crystal](https://crystal-lang.org/).
 
@@ -19,7 +18,7 @@ dependencies:
 
 ## API Version
 
-Version `1.1.1` of the FOAAS API is supported.
+Version `2.3.2` of the FOAAS API is supported.
 
 ## Usage
 
@@ -47,6 +46,12 @@ Will respond to the following `accept_type` values:
 * `:json` - Content will be returned as a JSON object.
 * `:html` - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
 * `:xml` - Content will be returned as a XML document.
+
+## Development
+
+```console
+crystal ./utils/generate_operations.cr
+```
 
 ## Contributing
 

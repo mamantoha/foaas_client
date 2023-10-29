@@ -4,7 +4,7 @@ module Foaas
   # A Crystal client for FOAAS (Fuck Off As A Service) - a modern, RESTful, scalable solution
   # to the common problem of telling people to fuck off.
   #
-  # ```crystal
+  # ```
   # require "foaas_client"
   #
   # client.rtfm("Me")
@@ -12,19 +12,19 @@ module Foaas
   #
   # List of [operations](https://foaas.com/operations) with names and fields.
   class Client
-    URL = "https://foaas.com"
+    URL = "https://web-production-d32f.up.railway.app"
 
     # You don't give a fuck about this method!
     #
     # Just call
     #
-    # ```crystal
+    # ```
     # client = Foaas::Client.new
     # ```
     #
     # to say
     #
-    # ```crystal
+    # ```
     # client.thanks(from: "%username%")
     # ```
     def initialize
@@ -35,7 +35,7 @@ module Foaas
     # to simply show some code.
     #
     # Here is a macro which looping through the `Foaas::Client::OPERATIONS` hash
-    # to define 80 *beautiful* methods for each operation.
+    # to define 99 *beautiful* methods for each operation.
     #
     # By the way, macros are evaluated at compile-time, meaning that they have no performance penalty.
     #
@@ -54,22 +54,31 @@ module Foaas
           {{field["field"].id}} : String,
         {% end %}
         *,
-        accept_type = :text
+        accept_type = :text,
+        i18n : String? = nil
       )
         template = {{operation["url"].gsub(/:(\w+)/, "%{\\1}")}}
 
         hash = {{operation["fields"].map { |f| {f["field"] => f["field"].id} }}}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
-        hash.each { |k, v| hash[k] = URI.encode(v) }
+
+        hash.each { |k, v| hash[k] = URI.encode_path(v) }
+
+        query_params = URI::Params.new
+        query_params["i18n"] = i18n if i18n
 
         url = URL + template % hash
+
+        uri = URI.parse(url)
+        uri.query_params = query_params
+
         headers = headers(accept_type)
 
-        make_request(url, headers)
+        make_request(uri, headers)
       end
     {% end %}
 
-    private def make_request(url : String, headers : HTTP::Headers)
-      response = HTTP::Client.get(url, headers)
+    private def make_request(uri : URI, headers : HTTP::Headers)
+      response = HTTP::Client.get(uri, headers)
       response.body
     end
 

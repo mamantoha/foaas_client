@@ -1,5 +1,5 @@
 module Foaas
   class Client
-    VERSION = "0.3.0"
+    VERSION = {{ `shards version #{__DIR__}`.chomp.stringify }}
   end
 end
