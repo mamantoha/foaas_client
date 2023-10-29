@@ -1,5 +1,5 @@
 name: foaas_client
-version: 0.3.0
+version: 0.4.0
 
 description: |
   A Crystal client for FOAAS - a modern, RESTful, scalable solution to the common problem of telling people to fuck off
