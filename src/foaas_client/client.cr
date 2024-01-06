@@ -12,7 +12,7 @@ module Foaas
   #
   # List of [operations](https://foaas.com/operations) with names and fields.
   class Client
-    URL = "https://web-production-d32f.up.railway.app"
+    URL = "https://foaas.dev"
 
     # You don't give a fuck about this method!
     #
