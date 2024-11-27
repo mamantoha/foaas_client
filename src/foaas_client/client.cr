@@ -12,7 +12,8 @@ module Foaas
   #
   # List of [operations](https://foaas.com/operations) with names and fields.
   class Client
-    URL = "https://foaas.dev"
+    # URL = "https://foaas.dev"
+    URL = "https://foaas.alexraskin.com"
 
     # You don't give a fuck about this method!
     #
