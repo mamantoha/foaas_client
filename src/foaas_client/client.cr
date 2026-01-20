@@ -60,7 +60,12 @@ module Foaas
       )
         template = {{ operation["url"].gsub(/:(\w+)/, "%{\\1}") }}
 
-        hash = {{ operation["fields"].map { |field| {field["field"] => field["field"].id} } }}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
+        hash =
+          {{
+            operation["fields"].map do |field|
+              {field["field"] => field["field"].id}
+            end
+          }}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
 
         hash.each { |k, v| hash[k] = URI.encode_path(v) }
 
