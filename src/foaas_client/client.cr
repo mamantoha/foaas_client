@@ -43,24 +43,24 @@ module Foaas
     # Macros should be just strong enough to reduce boilerplate code.
     #
     {% for operation in OPERATIONS %}
-      # {{operation["name"].id}}
+      # {{ operation["name"].id }}
       #
       # Parameters:
       {% for field in operation["fields"] %}
-      # * `{{field["field"].id}}` {{field["name"].id}}
+      # * `{{ field["field"].id }}` {{ field["name"].id }}
       {% end %}
       #
-      def {{operation["url"].split("/").reject(&.empty?)[0].gsub(/-/, "_").id}}(
+      def {{ operation["url"].split("/").reject(&.empty?)[0].gsub(/-/, "_").id }}(
         {% for field in operation["fields"] %}
-          {{field["field"].id}} : String,
+          {{ field["field"].id }} : String,
         {% end %}
         *,
         accept_type = :text,
         i18n : String? = nil
       )
-        template = {{operation["url"].gsub(/:(\w+)/, "%{\\1}")}}
+        template = {{ operation["url"].gsub(/:(\w+)/, "%{\\1}") }}
 
-        hash = {{operation["fields"].map { |f| {f["field"] => f["field"].id} }}}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
+        hash = {{ operation["fields"].map { |field| {field["field"] => field["field"].id} } }}.reduce({} of String => String) { |acc, hsh| acc.merge(hsh) }
 
         hash.each { |k, v| hash[k] = URI.encode_path(v) }
 
