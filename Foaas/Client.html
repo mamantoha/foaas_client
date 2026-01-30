@@ -1,0 +1,3540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.19.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="foaas_client">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="foaas_client">
+  <title>Foaas::Client - foaas_client master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          foaas_client
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="foaas_client/Foaas" data-name="foaas">
+      <a href="../Foaas.html">Foaas</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="foaas_client/Foaas/Client" data-name="foaas::client">
+      <a href="../Foaas/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="foaas_client/Foaas/Response" data-name="foaas::response">
+      <a href="../Foaas/Response.html">Response</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">
+    class
+  </span> Foaas::<wbr>Client
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Foaas/Client.html">Foaas::Client</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>A Crystal client for FOAAS (Fuck Off As A Service) - a modern, RESTful, scalable solution
+to the common problem of telling people to fuck off.</p>
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;foaas_client&quot;</span>
+
+client.rtfm(<span class="s">&quot;Me&quot;</span>)</code></pre>
+<p>List of <a href="https://foaas.com/operations">operations</a> with names and fields.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L22" target="_blank">
+        foaas_client/client.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/operations.cr#L4" target="_blank">
+        foaas_client/operations.cr
+      </a>
+    
+    <br/>
+  
+    
+      <a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/version.cr#L2" target="_blank">
+        foaas_client/version.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="URL">
+        <strong>URL</strong> = <code><span class="s">&quot;https://foaas.alexraskin.com&quot;</span></code>
+      </dt>
+      
+      <dd class="entry-const-doc">
+        <p>URL = &quot;https://foaas.dev&quot;</p>
+      </dd>
+      
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="o">{{</span> (<span class="s">`shards version /home/runner/work/foaas_client/foaas_client/src/foaas_client`</span>).chomp.stringify }}</code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+          <div class="summary"><p>You don't give a fuck about this method!</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+  
+
+  
+
+  
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#absolutely%28company%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#absolutely</strong>(company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Absolutely fucking not</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#anyway%28company%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#anyway</strong>(company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Who the fuck are you anyway</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#asshole%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#asshole</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Asshole</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#awesome%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#awesome</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Awesome</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#back%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#back</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Back the fuck off</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bag%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bag</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bag</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ballmer%28name%3AString%2Ccompany%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#ballmer</strong>(name : String, company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Ballmer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bday%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bday</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bday</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#because%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#because</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Because</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#blackadder%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#blackadder</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Blackadder</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bm%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bm</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bravo Mike</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bucket%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bucket</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bucket</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bus%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bus</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bus</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#bye%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#bye</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Bye</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#caniuse%28tool%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#caniuse</strong>(tool : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Can I Use</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chainsaw%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#chainsaw</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Chainsaw</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cocksplat%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#cocksplat</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Cocksplat</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cool%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#cool</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Cool Story</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#cup%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#cup</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Cup</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dalton%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#dalton</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Dalton</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dense%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#dense</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Dense</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#deraadt%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#deraadt</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>{name} you are being the usual slimy hypocritical asshole...</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#diabetes%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#diabetes</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Diabetes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#donut%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#donut</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Donut</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dosomething%28do%3AString%2Csomething%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#dosomething</strong>(do : String, something : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Do Something</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dumbledore%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#dumbledore</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Dumbledore</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#equity%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#equity</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Equity</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#even%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#even</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Even</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#everyone%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#everyone</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Everyone</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#everything%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#everything</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Everything</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#family%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#family</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Family</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fascinating%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#fascinating</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fascinating</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fewer%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#fewer</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Disappoint Fewer People</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#field%28name%3AString%2Cfrom%3AString%2Creference%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#field</strong>(name : String, from : String, reference : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Field of Fucks</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#flying%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#flying</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Flying</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ftfy%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#ftfy</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck That, Fuck You</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fts%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#fts</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck That Shit</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fyyff%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#fyyff</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>FYYFF</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gfy%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#gfy</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Golf Foxtrot Yankee</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#give%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#give</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Give</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#greed%28noun%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#greed</strong>(noun : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Greed</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#holygrail%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#holygrail</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Holygrail</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#horse%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#horse</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck you and the horse you rode in on</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#idea%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#idea</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Idea</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#immensity%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#immensity</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Immensity</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ing%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#ing</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fucking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#jinglebells%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#jinglebells</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Jingle Bells</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#keep%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#keep</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Keep</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#keepcalm%28reaction%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#keepcalm</strong>(reaction : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Keep Calm</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#king%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#king</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>King</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#legend%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#legend</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Legend</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#life%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#life</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Life</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#linus%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#linus</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Linus</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#logs%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#logs</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Check your fucking logs!</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#look%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#look</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Look</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#looking%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#looking</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Looking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#lowpoly%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#lowpoly</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>LowPoly</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#madison%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#madison</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Madison</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#maybe%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#maybe</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Maybe</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#me%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#me</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck Me</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mornin%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#mornin</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>mornin</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#no%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#no</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>No</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nugget%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#nugget</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Nugget</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#off%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#off</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck Off</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#off_with%28behavior%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#off_with</strong>(behavior : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck Off With</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#outside%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#outside</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Outside</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#particular%28thing%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#particular</strong>(thing : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>This Thing In Particular</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pink%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#pink</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Pink</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#problem%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#problem</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Problem</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#programmer%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#programmer</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Programmer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pulp%28language%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#pulp</strong>(language : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Pulp</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#question%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#question</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Question</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ratsarse%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#ratsarse</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Rat's Arse</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#retard%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#retard</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Retard</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ridiculous%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#ridiculous</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>That's fucking ridiculous</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rockstar%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#rockstar</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Rockstar</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rtfm%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#rtfm</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>RTFM</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#sake%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#sake</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>sake</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shakespeare%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#shakespeare</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Shakespeare</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shit%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#shit</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck This Shit</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#shutup%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#shutup</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Shut Up</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#single%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#single</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Single</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thanks%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#thanks</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Thanks</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#that%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#that</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck That</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#think%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#think</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>You Think</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thinking%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#thinking</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Thinking</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#this%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#this</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck This</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#thumbs%28from%3AString%2Cname%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#thumbs</strong>(from : String, name : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>This Guy</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#too%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#too</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Too</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tucker%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#tucker</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Tucker</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#understand%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#understand</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>understand</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#waste%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#waste</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Waste</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#what%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#what</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>What</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#xmas%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#xmas</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Xmas</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yeah%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#yeah</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Yeah</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#yoda%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#yoda</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Yoda</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#you%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#you</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Fuck You</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zayn%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#zayn</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Zayn</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#zero%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method" class="signature"><strong>#zero</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Zero</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <div class="methods-inherited">
+    
+      
+
+
+      
+
+
+      
+
+
+      
+
+
+    
+      
+
+
+      
+
+
+      
+
+
+      
+
+
+    
+  </div>
+
+  
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>You don't give a fuck about this method!</p>
+<p>Just call</p>
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Foaas</span><span class="t">::</span><span class="t">Client</span>.new</code></pre>
+<p>to say</p>
+<pre><code class="language-crystal">client.thanks(from: <span class="s">&quot;%username%&quot;</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+  
+
+  
+
+  
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="absolutely(company:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>absolutely</strong>(company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#absolutely%28company%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Absolutely fucking not</p>
+<p>Parameters:</p>
+<ul>
+<li><code>company</code> Company</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="anyway(company:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>anyway</strong>(company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#anyway%28company%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Who the fuck are you anyway</p>
+<p>Parameters:</p>
+<ul>
+<li><code>company</code> Company</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="asshole(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>asshole</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#asshole%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Asshole</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="awesome(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>awesome</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#awesome%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Awesome</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="back(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>back</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#back%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Back the fuck off</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bag(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bag</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bag%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bag</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ballmer(name:String,company:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>ballmer</strong>(name : String, company : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#ballmer%28name%3AString%2Ccompany%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Ballmer</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>company</code> Company</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bday(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bday</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bday%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bday</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="because(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>because</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#because%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Because</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="blackadder(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>blackadder</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#blackadder%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Blackadder</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bm(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bm</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bm%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bravo Mike</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bucket(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bucket</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bucket%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bucket</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bus(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bus</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bus%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bus</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="bye(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>bye</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#bye%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Bye</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="caniuse(tool:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>caniuse</strong>(tool : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#caniuse%28tool%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Can I Use</p>
+<p>Parameters:</p>
+<ul>
+<li><code>tool</code> Tool</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chainsaw(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>chainsaw</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#chainsaw%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Chainsaw</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cocksplat(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>cocksplat</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#cocksplat%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Cocksplat</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cool(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>cool</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#cool%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Cool Story</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="cup(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>cup</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#cup%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Cup</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dalton(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>dalton</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#dalton%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Dalton</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dense(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>dense</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#dense%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Dense</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="deraadt(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>deraadt</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#deraadt%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>{name} you are being the usual slimy hypocritical asshole... You may have had value ten years ago, but people will see that you don't anymore.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="diabetes(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>diabetes</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#diabetes%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Diabetes</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="donut(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>donut</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#donut%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Donut</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dosomething(do:String,something:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>dosomething</strong>(do : String, something : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#dosomething%28do%3AString%2Csomething%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Do Something</p>
+<p>Parameters:</p>
+<ul>
+<li><code>do</code> Do</li>
+<li><code>something</code> Something</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dumbledore(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>dumbledore</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#dumbledore%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Dumbledore</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="equity(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>equity</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#equity%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Equity</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="even(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>even</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#even%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Even</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="everyone(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>everyone</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#everyone%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Everyone</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="everything(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>everything</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#everything%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Everything</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="family(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>family</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#family%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Family</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fascinating(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>fascinating</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#fascinating%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fascinating</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fewer(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>fewer</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#fewer%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Disappoint Fewer People</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="field(name:String,from:String,reference:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>field</strong>(name : String, from : String, reference : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#field%28name%3AString%2Cfrom%3AString%2Creference%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Field of Fucks</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+<li><code>reference</code> Reference</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="flying(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>flying</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#flying%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Flying</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ftfy(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>ftfy</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#ftfy%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck That, Fuck You</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fts(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>fts</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#fts%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck That Shit</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fyyff(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>fyyff</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#fyyff%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>FYYFF</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gfy(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>gfy</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#gfy%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Golf Foxtrot Yankee</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="give(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>give</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#give%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Give</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="greed(noun:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>greed</strong>(noun : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#greed%28noun%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Greed</p>
+<p>Parameters:</p>
+<ul>
+<li><code>noun</code> Noun</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="holygrail(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>holygrail</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#holygrail%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Holygrail</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="horse(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>horse</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#horse%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck you and the horse you rode in on</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="idea(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>idea</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#idea%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Idea</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="immensity(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>immensity</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#immensity%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Immensity</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ing(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>ing</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#ing%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fucking</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="jinglebells(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>jinglebells</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#jinglebells%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Jingle Bells</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="keep(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>keep</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#keep%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Keep</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="keepcalm(reaction:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>keepcalm</strong>(reaction : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#keepcalm%28reaction%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Keep Calm</p>
+<p>Parameters:</p>
+<ul>
+<li><code>reaction</code> Reaction</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="king(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>king</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#king%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>King</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="legend(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>legend</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#legend%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Legend</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="life(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>life</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#life%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Life</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="linus(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>linus</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#linus%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Linus</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="logs(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>logs</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#logs%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Check your fucking logs!</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="look(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>look</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#look%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Look</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="looking(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>looking</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#looking%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Looking</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="lowpoly(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>lowpoly</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#lowpoly%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>LowPoly</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="madison(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>madison</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#madison%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Madison</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="maybe(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>maybe</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#maybe%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Maybe</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="me(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>me</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#me%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck Me</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mornin(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>mornin</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#mornin%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>mornin</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="no(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>no</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#no%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>No</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nugget(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>nugget</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#nugget%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Nugget</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="off(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>off</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#off%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck Off</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="off_with(behavior:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>off_with</strong>(behavior : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#off_with%28behavior%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck Off With</p>
+<p>Parameters:</p>
+<ul>
+<li><code>behavior</code> Behavior</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="outside(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>outside</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#outside%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Outside</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="particular(thing:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>particular</strong>(thing : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#particular%28thing%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>This Thing In Particular</p>
+<p>Parameters:</p>
+<ul>
+<li><code>thing</code> Thing</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pink(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>pink</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#pink%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Pink</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="problem(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>problem</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#problem%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Problem</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="programmer(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>programmer</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#programmer%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Programmer</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pulp(language:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>pulp</strong>(language : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#pulp%28language%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Pulp</p>
+<p>Parameters:</p>
+<ul>
+<li><code>language</code> Language</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="question(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>question</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#question%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Question</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ratsarse(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>ratsarse</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#ratsarse%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Rat's Arse</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="retard(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>retard</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#retard%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Retard</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ridiculous(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>ridiculous</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#ridiculous%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>That's fucking ridiculous</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rockstar(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>rockstar</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#rockstar%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Rockstar</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rtfm(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>rtfm</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#rtfm%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>RTFM</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="sake(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>sake</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#sake%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>sake</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shakespeare(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>shakespeare</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#shakespeare%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Shakespeare</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shit(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>shit</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#shit%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck This Shit</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="shutup(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>shutup</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#shutup%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Shut Up</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="single(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>single</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#single%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Single</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thanks(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>thanks</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#thanks%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Thanks</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="that(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>that</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#that%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck That</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="think(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>think</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#think%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>You Think</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thinking(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>thinking</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#thinking%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Thinking</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="this(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>this</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#this%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck This</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="thumbs(from:String,name:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>thumbs</strong>(from : String, name : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#thumbs%28from%3AString%2Cname%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>This Guy</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+<li><code>name</code> Name</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="too(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>too</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#too%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Too</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tucker(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>tucker</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#tucker%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Tucker</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="understand(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>understand</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#understand%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>understand</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="waste(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>waste</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#waste%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Waste</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="what(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>what</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#what%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>What</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="xmas(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>xmas</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#xmas%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Xmas</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yeah(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>yeah</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#yeah%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Yeah</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="yoda(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>yoda</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#yoda%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Yoda</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="you(name:String,from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>you</strong>(name : String, from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#you%28name%3AString%2Cfrom%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Fuck You</p>
+<p>Parameters:</p>
+<ul>
+<li><code>name</code> Name</li>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zayn(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>zayn</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#zayn%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Zayn</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="zero(from:String,*,i18n:String|Nil=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>zero</strong>(from : String, *, i18n : String | Nil = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#zero%28from%3AString%2C%2A%2Ci18n%3AString%7CNil%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Zero</p>
+<p>Parameters:</p>
+<ul>
+<li><code>from</code> From</li>
+</ul>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/mamantoha/foaas_client/blob/8ba01bcb22c2f2e9c10f2875055c09ec01d05047/src/foaas_client/client.cr#L53" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+</div>
+
+</body>
+</html>
