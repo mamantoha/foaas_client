@@ -29,27 +29,20 @@ require "foaas_client"
 client = Foaas::Client.new
 
 client.rtfm("Me")
-# => Read the fucking manual! - Me
+# => #<Foaas::Response:0x7fe964a10a80 @message="Read the fucking manual!", @subtitle="- Me">
 
-client.awesome("You", accept_type: :text)
-# => This is Fucking Awesome. - You
+client.awesome("You")
+# => #<Foaas::Response:0x7fe964a10900 @message="This is Fucking Awesome.", @subtitle="- You">
 
-client.you("Nvidia", "Linus Torvalds", accept_type: :text)
-# => Fuck you, Nvidia. - Linus Torvalds
+client.you("Nvidia", "Linus Torvalds")
+# => #<Foaas::Response:0x7fe964a10760 @message="Fuck you, Nvidia.", @subtitle="- Linus Torvalds">
 
-client.dosomething("Do", "work", "Ruby", accept_type: :text)
-# => Do the fucking work! - Ruby
+client.dosomething("Do", "work", "Ruby")
+# => #<Foaas::Response:0x7fe964a10ae0 @message="Do the fucking work!", @subtitle="- Ruby">
 
-client.awesome("Everyone", accept_type: :json, i18n: "uk")
-# => "{\"message\":\"Це, чорт забирай, класно. Усі \",\"subtitle\":\" undefined\"}"
+client.awesome("Everyone", i18n: "uk")
+# => #<Foaas::Response:0x7fe964a10940 @message="Це, чорт забирай, класно. Усі ", @subtitle=" undefined">
 ```
-
-Will respond to the following `accept_type` values:
-
-- `:text` - Content will be returned as a plain string.
-- `:json` - Content will be returned as a JSON object.
-- `:html` - Content will be returned as an HTML page with a twitter bootstrap hero unit, containing the message and the subtitle.
-- `:xml` - Content will be returned as a XML document.
 
 ## Development
 

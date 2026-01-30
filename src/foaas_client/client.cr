@@ -1,6 +1,14 @@
+require "json"
 require "./operations"
 
 module Foaas
+  class Response
+    include JSON::Serializable
+
+    getter message : String
+    getter subtitle : String?
+  end
+
   # A Crystal client for FOAAS (Fuck Off As A Service) - a modern, RESTful, scalable solution
   # to the common problem of telling people to fuck off.
   #
@@ -55,7 +63,6 @@ module Foaas
           {{ field["field"].id }} : String,
         {% end %}
         *,
-        accept_type = :text,
         i18n : String? = nil
       )
         template = {{ operation["url"].gsub(/:(\w+)/, "%{\\1}") }}
@@ -77,32 +84,15 @@ module Foaas
         uri = URI.parse(url)
         uri.query_params = query_params
 
-        headers = headers(accept_type)
+        headers = HTTP::Headers{"Accept" => "application/json"}
 
-        make_request(uri, headers)
+        message(uri, headers)
       end
     {% end %}
 
-    private def make_request(uri : URI, headers : HTTP::Headers)
+    private def message(uri : URI, headers : HTTP::Headers) : Foaas::Response
       response = HTTP::Client.get(uri, headers)
-      response.body
-    end
-
-    private def headers(accept_type : Symbol)
-      accept = case accept_type
-               when :html
-                 "text/html"
-               when :json
-                 "application/json"
-               when :xml
-                 "application/xml"
-               when :text
-                 "text/plain"
-               else
-                 "text/plain"
-               end
-
-      HTTP::Headers{"Accept" => accept}
+      Response.from_json(response.body)
     end
   end
 end
