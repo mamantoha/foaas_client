@@ -16,6 +16,6 @@ describe Foaas::Client do
 
   it "i18n" do
     message = client.awesome("Everyone", i18n: "uk")
-    message.message.should eq("Це, чорт забирай, класно. Усі ")
+    message.message.should eq("Це, чорт забирай, класно. Усі")
   end
 end
