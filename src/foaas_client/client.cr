@@ -5,8 +5,12 @@ module Foaas
   class Response
     include JSON::Serializable
 
-    getter message : String
+    @message : String
     getter subtitle : String?
+
+    def message
+      @message.strip
+    end
   end
 
   # A Crystal client for FOAAS (Fuck Off As A Service) - a modern, RESTful, scalable solution
