@@ -2,6 +2,8 @@
 
 [![Crystal CI](https://github.com/mamantoha/foaas_client/actions/workflows/crystal.yml/badge.svg)](https://github.com/mamantoha/foaas_client/actions/workflows/crystal.yml)
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://mamantoha.github.io/foaas_client/)
+[![GitHub release](https://img.shields.io/github/release/mamantoha/foaas_client.svg)](https://github.com/mamantoha/foaas_client/releases)
+[![License](https://img.shields.io/github/license/mamantoha/foaas_client.svg)](https://github.com/mamantoha/foaas_client/blob/master/LICENSE)
 
 A Crystal client for [FOAAS](https://github.com/tomdionysus/foaas)(Fuck Off As A Service) - a modern, RESTful, scalable solution to the common problem of telling people to fuck off.
 
